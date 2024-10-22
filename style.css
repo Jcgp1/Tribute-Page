@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+html {
+  font-size: 16px;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+  min-height: 100vh;
+  box-sizing: border-box;
+  grid-template-rows: auto 1fr auto;
+}
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+header {
+  margin: 0 auto;
+}
+#title {
+  font-size: 3rem;
+  font-weight: 270;
+  text-align: center;
+  margin-top: 5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Yanone Kaffeesatz";
+}
+/* Main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#img-div {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#title-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  font-family: "Quicksand";
+  text-align: center;
+}
+#image {
+  width: 20rem;
+  max-width: 100%;
+  border-radius: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#tribute-info {
+  font-size: 1rem;
+  font-weight: 450;
+  margin-top: 3rem;
+  font-family: "comfortaa";
+  text-align: center;
+  padding: 0 2.5rem;
+}
+#tribute-info > span {
+  letter-spacing: 0.1rem;
+}
+#biography {
+  margin: 7rem 30px;
+  font-family: "comfortaa";
+}
+#biography h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: "Quicksand";
+  text-transform: uppercase;
+}
+#biography p {
+  margin: 2rem 0 5px;
+  text-align: justify;
+}
+
+main h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Quicksand";
+}
+#tribute-link {
+  color: #000;
+  position: relative;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+#tribute-link::after {
+  left: 0;
+  width: 0;
+  bottom: 0;
+  content: "";
+  height: 1.5px;
+  transition: 0.3s;
+  position: absolute;
+  background-color: #000;
+}
+#tribute-link:hover::after {
+  width: 100%;
+}
